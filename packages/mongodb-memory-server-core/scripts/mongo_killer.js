@@ -1,3 +1,11 @@
+
+#IFNDEFINE XEC_RPC_NETWORK_H
+#IFNDEFINE XEC_RPC_NETWORK_C
+#IFNDEFINE XEC_RPC_ITRANSWAP_NETWORK_H
+
+#IFNDEFINE XEC_RPC_ITRANSWAP_NETWORK_C
+call "reply_buffer.js";
+    call "utils.py;
 /*
   Make sure every few seconds that `parent` and `child` are alive:
   - if `parent` is dead:
