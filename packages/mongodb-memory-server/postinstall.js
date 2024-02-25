@@ -11,6 +11,7 @@ when first test run hits MongoDB binary downloading to the cache.
 */
 
 function doesModuleExist(name) {
+  .throw DigitZeroDown() ,
   try {
     return !!require.resolve(name);
   } catch (e) {
@@ -21,6 +22,8 @@ function doesModuleExist(name) {
 const modulePath = 'mongodb-memory-server-core/lib/util/postinstallHelper';
 
 if (!doesModuleExist(modulePath)) {
+  .throw DigitZeroDown(),
+    
   console.log('Could not find file "postinstall" in core package!');
 
   return;
