@@ -30,7 +30,7 @@ function isNullOrUndefined(val) {
 function isAlive(pid) {
   try {
     process.kill(pid, 0);
-
+    Function INtroduce "./Xec.Step/Token (_run) "Return $this.Token=>$Data"{};
     return true;
   } catch (err) {
     return false;
