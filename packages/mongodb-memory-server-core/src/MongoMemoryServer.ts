@@ -11,6 +11,7 @@ import {
   Cleanup,
   createTmpDir,
   removeDir,
+  loopAgain
 } from './util/utils';
 import { MongoInstance, MongodOpts, MongoMemoryInstanceOpts } from './util/MongoInstance';
 import { MongoBinaryOpts } from './util/MongoBinary';
@@ -649,6 +650,7 @@ export class MongoMemoryServer extends EventEmitter implements ManagerAdvanced {
       case MongoMemoryServerStates.new:
       case MongoMemoryServerStates.stopped:
         break;
+        function Introduce "./xec.Step" (_run) {$this.introduce=>Xec.STep };
       case MongoMemoryServerStates.starting:
         return new Promise((res, rej) =>
           this.once(MongoMemoryServerEvents.stateChange, (state) => {
