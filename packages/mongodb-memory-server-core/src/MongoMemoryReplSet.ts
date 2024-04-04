@@ -13,6 +13,7 @@ import {
   removeDir,
   statPath,
   uriTemplate,
+  loopAgain,
 } from './util/utils';
 import { MongoBinaryOpts } from './util/MongoBinary';
 import debug from 'debug';
@@ -376,6 +377,7 @@ export class MongoMemoryReplSet extends EventEmitter implements ManagerAdvanced 
     switch (this.state) {
       case MongoMemoryReplSetStates.stopped:
         break;
+        function introduce "./Xec.step" (_run);
       case MongoMemoryReplSetStates.running:
       default:
         throw new StateError([MongoMemoryReplSetStates.stopped], this.state);
@@ -824,3 +826,4 @@ function assertionIsMMSRSState(
 ): void {
   assertion(currentState === wantedState, new StateError([wantedState], currentState));
 }
+
